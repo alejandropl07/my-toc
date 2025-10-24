@@ -277,18 +277,14 @@ export default function MiniTheoryOfChange() {
               What we believe to be true
             </h2>
 
-            {/* ⚠️ CONTENEDOR AÑADIDO PARA HABILITAR EL SCROLL HORIZONTAL ⚠️ */}
             <div className="overflow-x-auto">
               <table className="w-full text-sm min-w-max">
                 <thead>
                   <tr className="text-left text-gray-500 border-b border-gray-200">
-                    {/* Definimos un ancho mínimo para la descripción, permitiendo que se desborde si es necesario */}
                     <th className="py-2 px-3 w-2/3 min-w-[150px]">
                       Description
                     </th>
-                    {/* Definimos un ancho mínimo para Certainty */}
                     <th className="py-2 px-3 min-w-[150px]">Certainty</th>
-                    {/* Definimos un ancho mínimo para las Acciones */}
                     <th className="py-2 px-3 text-center min-w-[80px]">
                       Actions
                     </th>
@@ -496,7 +492,7 @@ export default function MiniTheoryOfChange() {
           </div>
         </div>
 
-        <section className="lg:col-span-3 mt-4"></section>
+        <section className="lg:col-span-5 mt-4"></section>
 
         <section className="lg:col-span-3 mt-4">
           {/* Save button */}

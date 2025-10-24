@@ -47,20 +47,21 @@ const OutcomeCard = ({
         <h2 className="text-xl font-bold text-purple-800">{title}</h2>
         <p className="text-sm text-gray-600 mb-4">{subtitle}</p>
 
-        <div className="space-y-4 p-5">
-          {visibleItems.map((item: any) => (
-            <div
-              key={item.id}
-              className="relative pt-2 border-t border-dotted border-gray-300"
-            >
-              <p className="text-gray-800 text-base">{item.text}</p>
-            </div>
-          ))}
+        <div className="space-y-4 p-5 relative">
+  {visibleItems.map((item: any) => (
+    <div
+      key={item.id}
+      className="relative pt-2 border-t border-dotted border-gray-300"
+    >
+      <p className="text-gray-800 text-base">{item.text}</p>
+    </div>
+  ))}
 
-          {!showAll && items.length > 2 && (
-            <div className="absolute left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent -bottom-2 pointer-events-none"></div>
-          )}
-        </div>
+  {!showAll && items.length > 2 && (
+    <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+  )}
+</div>
+
       </div>
 
       <div className="mt-6 p-5">

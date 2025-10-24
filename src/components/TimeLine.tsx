@@ -18,7 +18,7 @@ const TimeLine = () => {
   return (
     <div className="relative w-full py-10">
       <div
-        className="absolute top-1/2 left-0 w-full h-2 bg-purple-600 z-0 transform -translate-y-1/2"
+        className="absolute top-1/2 left-0 w-full h-3 bg-purple-600 z-0 transform -translate-y-1/2"
         style={{ backgroundColor: "#7E1E9B" }}
       ></div>
 
